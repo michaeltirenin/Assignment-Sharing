@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F292DC3F1929BC85009322AB /* MTEditPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F292DC3E1929BC85009322AB /* MTEditPostViewController.m */; };
+		F2DAF8FE1929DBD3005B2822 /* UIColor+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DAF8FD1929DBD3005B2822 /* UIColor+Manage.m */; };
 		F2F577DA1929908500FCBA28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F577D91929908500FCBA28 /* Foundation.framework */; };
 		F2F577DC1929908500FCBA28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F577DB1929908500FCBA28 /* CoreGraphics.framework */; };
 		F2F577DE1929908500FCBA28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F577DD1929908500FCBA28 /* UIKit.framework */; };
@@ -14,13 +16,16 @@
 		F2F577E61929908500FCBA28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F577E51929908500FCBA28 /* main.m */; };
 		F2F577EA1929908500FCBA28 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F577E91929908500FCBA28 /* MTAppDelegate.m */; };
 		F2F577ED1929908500FCBA28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F577EB1929908500FCBA28 /* Main.storyboard */; };
-		F2F577F01929908500FCBA28 /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F577EF1929908500FCBA28 /* MTViewController.m */; };
 		F2F577F21929908500FCBA28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F577F11929908500FCBA28 /* Images.xcassets */; };
 		F2F577F91929908500FCBA28 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F577F81929908500FCBA28 /* XCTest.framework */; };
 		F2F577FA1929908500FCBA28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F577D91929908500FCBA28 /* Foundation.framework */; };
 		F2F577FB1929908500FCBA28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F577DD1929908500FCBA28 /* UIKit.framework */; };
 		F2F578031929908500FCBA28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2F578011929908500FCBA28 /* InfoPlist.strings */; };
 		F2F578051929908500FCBA28 /* Assignment_UIImagePickerControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F578041929908500FCBA28 /* Assignment_UIImagePickerControllerTests.m */; };
+		F2F578101929914600FCBA28 /* MTPost.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F5780F1929914600FCBA28 /* MTPost.m */; };
+		F2F578141929918900FCBA28 /* MTPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F578131929918900FCBA28 /* MTPostTableViewCell.m */; };
+		F2F57818192991BC00FCBA28 /* MTPostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F57817192991BC00FCBA28 /* MTPostsTableViewController.m */; };
+		F2F5781C1929A0AC00FCBA28 /* MTCreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F5781B1929A0AC00FCBA28 /* MTCreatePostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F292DC3D1929BC85009322AB /* MTEditPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTEditPostViewController.h; sourceTree = "<group>"; };
+		F292DC3E1929BC85009322AB /* MTEditPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTEditPostViewController.m; sourceTree = "<group>"; };
+		F2DAF8FC1929DBD3005B2822 /* UIColor+Manage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Manage.h"; sourceTree = "<group>"; };
+		F2DAF8FD1929DBD3005B2822 /* UIColor+Manage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Manage.m"; sourceTree = "<group>"; };
 		F2F577D61929908500FCBA28 /* Assignment UIImagePickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment UIImagePickerController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F577D91929908500FCBA28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F2F577DB1929908500FCBA28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +54,20 @@
 		F2F577E81929908500FCBA28 /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
 		F2F577E91929908500FCBA28 /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
 		F2F577EC1929908500FCBA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F2F577EE1929908500FCBA28 /* MTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
-		F2F577EF1929908500FCBA28 /* MTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
 		F2F577F11929908500FCBA28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F2F577F71929908500FCBA28 /* Assignment UIImagePickerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment UIImagePickerControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F577F81929908500FCBA28 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F2F578001929908500FCBA28 /* Assignment UIImagePickerControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment UIImagePickerControllerTests-Info.plist"; sourceTree = "<group>"; };
 		F2F578021929908500FCBA28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2F578041929908500FCBA28 /* Assignment_UIImagePickerControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment_UIImagePickerControllerTests.m; sourceTree = "<group>"; };
+		F2F5780E1929914600FCBA28 /* MTPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPost.h; sourceTree = "<group>"; };
+		F2F5780F1929914600FCBA28 /* MTPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPost.m; sourceTree = "<group>"; };
+		F2F578121929918900FCBA28 /* MTPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPostTableViewCell.h; sourceTree = "<group>"; };
+		F2F578131929918900FCBA28 /* MTPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPostTableViewCell.m; sourceTree = "<group>"; };
+		F2F57816192991BC00FCBA28 /* MTPostsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPostsTableViewController.h; sourceTree = "<group>"; };
+		F2F57817192991BC00FCBA28 /* MTPostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPostsTableViewController.m; sourceTree = "<group>"; };
+		F2F5781A1929A0AC00FCBA28 /* MTCreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCreatePostViewController.h; sourceTree = "<group>"; };
+		F2F5781B1929A0AC00FCBA28 /* MTCreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCreatePostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +127,11 @@
 		F2F577DF1929908500FCBA28 /* Assignment UIImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
-				F2F577E81929908500FCBA28 /* MTAppDelegate.h */,
-				F2F577E91929908500FCBA28 /* MTAppDelegate.m */,
-				F2F577EB1929908500FCBA28 /* Main.storyboard */,
-				F2F577EE1929908500FCBA28 /* MTViewController.h */,
-				F2F577EF1929908500FCBA28 /* MTViewController.m */,
+				F2F578111929915400FCBA28 /* Model */,
+				F2F578151929918D00FCBA28 /* View */,
+				F2F57819192991C300FCBA28 /* Controller */,
+				F2DAF8FC1929DBD3005B2822 /* UIColor+Manage.h */,
+				F2DAF8FD1929DBD3005B2822 /* UIColor+Manage.m */,
 				F2F577F11929908500FCBA28 /* Images.xcassets */,
 				F2F577E01929908500FCBA28 /* Supporting Files */,
 			);
@@ -126,6 +141,8 @@
 		F2F577E01929908500FCBA28 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F2F577E81929908500FCBA28 /* MTAppDelegate.h */,
+				F2F577E91929908500FCBA28 /* MTAppDelegate.m */,
 				F2F577E11929908500FCBA28 /* Assignment UIImagePickerController-Info.plist */,
 				F2F577E21929908500FCBA28 /* InfoPlist.strings */,
 				F2F577E51929908500FCBA28 /* main.m */,
@@ -150,6 +167,38 @@
 				F2F578011929908500FCBA28 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2F578111929915400FCBA28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2F5780E1929914600FCBA28 /* MTPost.h */,
+				F2F5780F1929914600FCBA28 /* MTPost.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F2F578151929918D00FCBA28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2F577EB1929908500FCBA28 /* Main.storyboard */,
+				F2F578121929918900FCBA28 /* MTPostTableViewCell.h */,
+				F2F578131929918900FCBA28 /* MTPostTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F2F57819192991C300FCBA28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2F57816192991BC00FCBA28 /* MTPostsTableViewController.h */,
+				F2F57817192991BC00FCBA28 /* MTPostsTableViewController.m */,
+				F2F5781A1929A0AC00FCBA28 /* MTCreatePostViewController.h */,
+				F2F5781B1929A0AC00FCBA28 /* MTCreatePostViewController.m */,
+				F292DC3D1929BC85009322AB /* MTEditPostViewController.h */,
+				F292DC3E1929BC85009322AB /* MTEditPostViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +300,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2F577E61929908500FCBA28 /* main.m in Sources */,
-				F2F577F01929908500FCBA28 /* MTViewController.m in Sources */,
+				F2F578141929918900FCBA28 /* MTPostTableViewCell.m in Sources */,
+				F2F578101929914600FCBA28 /* MTPost.m in Sources */,
+				F2F57818192991BC00FCBA28 /* MTPostsTableViewController.m in Sources */,
+				F2DAF8FE1929DBD3005B2822 /* UIColor+Manage.m in Sources */,
 				F2F577EA1929908500FCBA28 /* MTAppDelegate.m in Sources */,
+				F2F5781C1929A0AC00FCBA28 /* MTCreatePostViewController.m in Sources */,
+				F292DC3F1929BC85009322AB /* MTEditPostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +511,7 @@
 				F2F5780A1929908500FCBA28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2F5780B1929908500FCBA28 /* Build configuration list for PBXNativeTarget "Assignment UIImagePickerControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +520,7 @@
 				F2F5780D1929908500FCBA28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

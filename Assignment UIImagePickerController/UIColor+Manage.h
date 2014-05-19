@@ -1,5 +1,5 @@
 //
-//  MTViewController.h
+//  UIColor+Manage.h
 //  Assignment UIImagePickerController
 //
 //  Created by Michael Tirenin on 5/18/14.
@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MTViewController : UIViewController
+@interface UIColor (Manage)
+
++ (UIColor *)randomColor;
+
++ (UIColor *)lightenColor:(UIColor *)color byAmount:(CGFloat)amount;
 
 @end
