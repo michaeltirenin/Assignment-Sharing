@@ -53,7 +53,6 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="contentLabel" destination="XuP-PM-984" id="0ci-uc-sQc"/>
-                                    <outlet property="imageView" destination="uqt-Y3-XFQ" id="uWq-Y7-onh"/>
                                     <outlet property="pictureImageView" destination="uqt-Y3-XFQ" id="3wa-5d-CtC"/>
                                     <outlet property="timeStampLabel" destination="BhD-Pf-lt4" id="G4s-Oh-THU"/>
                                     <outlet property="titleLabel" destination="QVv-af-UOM" id="fI4-aY-sfl"/>

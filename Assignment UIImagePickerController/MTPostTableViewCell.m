@@ -59,6 +59,7 @@
     
     _pictureImageView.layer.cornerRadius = _pictureImageView.frame.size.width / 2.0;
     [_pictureImageView setClipsToBounds:YES];
+//    [_pictureImageView.layer setMasksToBounds:YES];
 
 }
 
