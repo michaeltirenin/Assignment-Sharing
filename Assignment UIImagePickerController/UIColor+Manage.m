@@ -16,19 +16,25 @@
     CGFloat hue = (arc4random() % 256 / 256.0);
     if (hue > 0.75) {
         hue = hue / 1.75;
-    } else if (hue < 0.4) {
+    } else if (hue <= 0.2) {
+        hue = 0.0;
+    } else if (hue > 2.0 && hue <= 4.0) {
         hue = hue * 1.75;
     }
-    CGFloat saturation = (arc4random() % 128 / 256.0) + 0.5;
-    if (saturation > 0.7) {
-        saturation = saturation / 2.0;
-    }
-    CGFloat brightness = (arc4random() % 128 / 256.0) + 0.5;
-    if (brightness < 0.4) {
-        brightness = brightness * 1.5;
-    } else if (brightness > 0.8) {
-        brightness = brightness / 1.5;
-    }
+//    CGFloat saturation = (arc4random() % 128 / 256.0) + 0.5;
+    CGFloat saturation = 0.2;
+//    if (saturation > 0.5) {
+//        saturation = saturation / 2.0;
+//    }
+//    CGFloat brightness = (arc4random() % 128 / 256.0) + 0.5;
+    CGFloat brightness = 0.7;
+//    if (brightness <= 0.2) {
+//        brightness = brightness * 4.0;
+//    } else if (brightness > 0.2 && brightness <= 0.4) {
+//        brightness = brightness * 2.0;
+//    } else if (brightness > 0.8) {
+//        brightness = brightness / 1.5;
+//    }
     //    NSLog(@"%f, %f, %f", hue, saturation, brightness);
     
     return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1.0];

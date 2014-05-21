@@ -14,6 +14,7 @@
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, strong) NSDate *timeStamp;
+@property (nonatomic, strong) UIImage *picture;
 
 // this method formats the date to a string from the NSDate object
 - (NSString *)stringFromDate:(NSDate *)sender;

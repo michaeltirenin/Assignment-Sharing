@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F24E47DD192B022A005E663C /* dougherty1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F24E47D3192B022A005E663C /* dougherty1.jpg */; };
+		F24E47DE192B022A005E663C /* dougherty2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F24E47D4192B022A005E663C /* dougherty2.jpg */; };
+		F24E47DF192B022A005E663C /* dougherty3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F24E47D5192B022A005E663C /* dougherty3.jpg */; };
+		F24E47E0192B022A005E663C /* dougherty4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F24E47D6192B022A005E663C /* dougherty4.jpg */; };
+		F24E47E1192B022A005E663C /* dougherty5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F24E47D7192B022A005E663C /* dougherty5.jpg */; };
+		F24E47E2192B022A005E663C /* dougherty6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F24E47D8192B022A005E663C /* dougherty6.jpg */; };
+		F24E47E3192B022A005E663C /* dougherty7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F24E47D9192B022A005E663C /* dougherty7.jpg */; };
+		F24E47E4192B022A005E663C /* dougherty8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F24E47DA192B022A005E663C /* dougherty8.jpg */; };
+		F24E47E5192B022A005E663C /* dougherty9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F24E47DB192B022A005E663C /* dougherty9.jpg */; };
+		F24E47E6192B022A005E663C /* dougherty10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F24E47DC192B022A005E663C /* dougherty10.jpg */; };
+		F24E47E9192B118A005E663C /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = F24E47E8192B118A005E663C /* UIImage+ImageEffects.m */; };
+		F24E47EB192B11F4005E663C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24E47EA192B11F4005E663C /* AssetsLibrary.framework */; };
+		F24E47ED192B1753005E663C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24E47EC192B1753005E663C /* CoreImage.framework */; };
 		F292DC3F1929BC85009322AB /* MTEditPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F292DC3E1929BC85009322AB /* MTEditPostViewController.m */; };
 		F2DAF8FE1929DBD3005B2822 /* UIColor+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DAF8FD1929DBD3005B2822 /* UIColor+Manage.m */; };
 		F2F577DA1929908500FCBA28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F577D91929908500FCBA28 /* Foundation.framework */; };
@@ -39,6 +52,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F24E47D3192B022A005E663C /* dougherty1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dougherty1.jpg; sourceTree = "<group>"; };
+		F24E47D4192B022A005E663C /* dougherty2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dougherty2.jpg; sourceTree = "<group>"; };
+		F24E47D5192B022A005E663C /* dougherty3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dougherty3.jpg; sourceTree = "<group>"; };
+		F24E47D6192B022A005E663C /* dougherty4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dougherty4.jpg; sourceTree = "<group>"; };
+		F24E47D7192B022A005E663C /* dougherty5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dougherty5.jpg; sourceTree = "<group>"; };
+		F24E47D8192B022A005E663C /* dougherty6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dougherty6.jpg; sourceTree = "<group>"; };
+		F24E47D9192B022A005E663C /* dougherty7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dougherty7.jpg; sourceTree = "<group>"; };
+		F24E47DA192B022A005E663C /* dougherty8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dougherty8.jpg; sourceTree = "<group>"; };
+		F24E47DB192B022A005E663C /* dougherty9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dougherty9.jpg; sourceTree = "<group>"; };
+		F24E47DC192B022A005E663C /* dougherty10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dougherty10.jpg; sourceTree = "<group>"; };
+		F24E47E7192B118A005E663C /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		F24E47E8192B118A005E663C /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		F24E47EA192B11F4005E663C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F24E47EC192B1753005E663C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		F292DC3D1929BC85009322AB /* MTEditPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTEditPostViewController.h; sourceTree = "<group>"; };
 		F292DC3E1929BC85009322AB /* MTEditPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTEditPostViewController.m; sourceTree = "<group>"; };
 		F2DAF8FC1929DBD3005B2822 /* UIColor+Manage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Manage.h"; sourceTree = "<group>"; };
@@ -75,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24E47ED192B1753005E663C /* CoreImage.framework in Frameworks */,
+				F24E47EB192B11F4005E663C /* AssetsLibrary.framework in Frameworks */,
 				F2F577DC1929908500FCBA28 /* CoreGraphics.framework in Frameworks */,
 				F2F577DE1929908500FCBA28 /* UIKit.framework in Frameworks */,
 				F2F577DA1929908500FCBA28 /* Foundation.framework in Frameworks */,
@@ -94,6 +123,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F24E47A8192AD38C005E663C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F24E47D3192B022A005E663C /* dougherty1.jpg */,
+				F24E47D4192B022A005E663C /* dougherty2.jpg */,
+				F24E47D5192B022A005E663C /* dougherty3.jpg */,
+				F24E47D6192B022A005E663C /* dougherty4.jpg */,
+				F24E47D7192B022A005E663C /* dougherty5.jpg */,
+				F24E47D8192B022A005E663C /* dougherty6.jpg */,
+				F24E47D9192B022A005E663C /* dougherty7.jpg */,
+				F24E47DA192B022A005E663C /* dougherty8.jpg */,
+				F24E47DB192B022A005E663C /* dougherty9.jpg */,
+				F24E47DC192B022A005E663C /* dougherty10.jpg */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		F2F577CD1929908500FCBA28 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +163,8 @@
 		F2F577D81929908500FCBA28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F24E47EC192B1753005E663C /* CoreImage.framework */,
+				F24E47EA192B11F4005E663C /* AssetsLibrary.framework */,
 				F2F577D91929908500FCBA28 /* Foundation.framework */,
 				F2F577DB1929908500FCBA28 /* CoreGraphics.framework */,
 				F2F577DD1929908500FCBA28 /* UIKit.framework */,
@@ -132,8 +181,11 @@
 				F2F57819192991C300FCBA28 /* Controller */,
 				F2DAF8FC1929DBD3005B2822 /* UIColor+Manage.h */,
 				F2DAF8FD1929DBD3005B2822 /* UIColor+Manage.m */,
+				F24E47E7192B118A005E663C /* UIImage+ImageEffects.h */,
+				F24E47E8192B118A005E663C /* UIImage+ImageEffects.m */,
 				F2F577F11929908500FCBA28 /* Images.xcassets */,
 				F2F577E01929908500FCBA28 /* Supporting Files */,
+				F24E47A8192AD38C005E663C /* Images */,
 			);
 			path = "Assignment UIImagePickerController";
 			sourceTree = "<group>";
@@ -249,6 +301,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Michael Tirenin";
 				TargetAttributes = {
+					F2F577D51929908500FCBA28 = {
+						DevelopmentTeam = C65MMLEB3C;
+					};
 					F2F577F61929908500FCBA28 = {
 						TestTargetID = F2F577D51929908500FCBA28;
 					};
@@ -278,9 +333,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24E47DE192B022A005E663C /* dougherty2.jpg in Resources */,
 				F2F577F21929908500FCBA28 /* Images.xcassets in Resources */,
+				F24E47E0192B022A005E663C /* dougherty4.jpg in Resources */,
+				F24E47DD192B022A005E663C /* dougherty1.jpg in Resources */,
+				F24E47E4192B022A005E663C /* dougherty8.jpg in Resources */,
+				F24E47E5192B022A005E663C /* dougherty9.jpg in Resources */,
 				F2F577E41929908500FCBA28 /* InfoPlist.strings in Resources */,
+				F24E47E3192B022A005E663C /* dougherty7.jpg in Resources */,
+				F24E47E6192B022A005E663C /* dougherty10.jpg in Resources */,
+				F24E47E2192B022A005E663C /* dougherty6.jpg in Resources */,
+				F24E47E1192B022A005E663C /* dougherty5.jpg in Resources */,
 				F2F577ED1929908500FCBA28 /* Main.storyboard in Resources */,
+				F24E47DF192B022A005E663C /* dougherty3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +369,7 @@
 				F2F578101929914600FCBA28 /* MTPost.m in Sources */,
 				F2F57818192991BC00FCBA28 /* MTPostsTableViewController.m in Sources */,
 				F2DAF8FE1929DBD3005B2822 /* UIColor+Manage.m in Sources */,
+				F24E47E9192B118A005E663C /* UIImage+ImageEffects.m in Sources */,
 				F2F577EA1929908500FCBA28 /* MTAppDelegate.m in Sources */,
 				F2F5781C1929A0AC00FCBA28 /* MTCreatePostViewController.m in Sources */,
 				F292DC3F1929BC85009322AB /* MTEditPostViewController.m in Sources */,
@@ -431,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Assignment UIImagePickerController/Assignment UIImagePickerController-Prefix.pch";
 				INFOPLIST_FILE = "Assignment UIImagePickerController/Assignment UIImagePickerController-Info.plist";
@@ -444,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Assignment UIImagePickerController/Assignment UIImagePickerController-Prefix.pch";
 				INFOPLIST_FILE = "Assignment UIImagePickerController/Assignment UIImagePickerController-Info.plist";
