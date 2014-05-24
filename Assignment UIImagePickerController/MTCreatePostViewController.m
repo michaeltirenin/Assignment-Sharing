@@ -100,8 +100,6 @@
     } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Photo Library"]) {
         _imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         [self presentViewController:_imagePicker animated:YES completion:nil];
-    } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Cancel"]) {
-        [actionSheet dismissWithClickedButtonIndex:0 animated:YES];
     } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Add B&W Photo Effect"]) {
         [self applyCIFilter:_createPictureImageView.image];
     } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Delete Photo"]) {
@@ -121,7 +119,7 @@
         if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
             UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Choose Photo Source"
                                                                      delegate:self
-                                                            cancelButtonTitle:@"Cancel" //cancel isn't working correclty?
+                                                            cancelButtonTitle:@"Cancel"
                                                        destructiveButtonTitle:nil
                                                             otherButtonTitles:@"Photo Library", @"Camera", nil];
             [actionSheet showFromBarButtonItem:sender animated:YES];
@@ -196,6 +194,9 @@
     
     UIImage *filteredImage = [UIImage imageWithCGImage:cgImage];
     _createPictureImageView.image = filteredImage;
+    
+    CGImageRelease(cgImage);  // added by Michael due to leak
+    
 //    [self saveImageToLibrary:filteredImage];
 }
 

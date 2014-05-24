@@ -10,7 +10,10 @@
 
 @interface UIColor (Manage)
 
+// somehow doesn't work ... something in the term "randomColor"?
 + (UIColor *)randomColor;
+
++ (UIColor *)theOtherColor;
 
 + (UIColor *)lightenColor:(UIColor *)color byAmount:(CGFloat)amount;
 

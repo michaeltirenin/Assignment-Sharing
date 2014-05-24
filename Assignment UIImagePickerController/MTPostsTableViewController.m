@@ -15,18 +15,12 @@
 
 @interface MTPostsTableViewController () <UITableViewDataSource, UITableViewDelegate, MTCreatePostViewControllerDelegate, MTEditPostViewControllerDelegate>
 
+// added by Michael (when he changed from UITableViewController to UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end
 
 @implementation MTPostsTableViewController
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -115,19 +109,19 @@
      self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return 1;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+//{
+//    // Return the number of sections.
+//    return 1;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -145,14 +139,15 @@
 //    }
     
     MTPost *post = [self.posts objectAtIndex:indexPath.row];
+
     [postCell setPost:post];
 
-    // random color implemented
-    int i = 0;
-    while (i <= self.posts.count) {
-        postCell.contentView.backgroundColor = [UIColor randomColor];
-        i++;
-    }
+    // random color implemented -- old
+//    int i = 0;
+//    while (i <= self.posts.count) {
+//        postCell.contentView.backgroundColor = [UIColor randomColor];
+//        i++;
+//    }
     
     return postCell;
 }
@@ -210,11 +205,12 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     if ([segue.identifier isEqualToString:@"PublishSegue"]) {
+        
         MTCreatePostViewController *createPostVC = segue.destinationViewController;
         createPostVC.createPostDelegate = self;
         
-    }
-    if ([segue.identifier isEqualToString:@"EditSegue"]) {
+    } else if ([segue.identifier isEqualToString:@"EditSegue"]) {
+        
         MTEditPostViewController *editPostVC = segue.destinationViewController;
         editPostVC.editPostDelegate = self;
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
@@ -232,13 +228,21 @@
 
 - (void)updateTable
 {
+// Michael's method
+//    NSArray *visibleCells = [self.tableView visibleCells];
+//    for (UITableViewCell *cell in visibleCells) {
+//            cell.contentView.backgroundColor = [UIColor randomColor];
+//        }
+    
     [self.tableView reloadData];
 }
 
 // to add background color to disclosure access. in cells
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    cell.backgroundColor = cell.contentView.backgroundColor;
+//    cell.backgroundColor = cell.contentView.backgroundColor;
+    // Michael changed it to this
+    cell.backgroundColor = [UIColor theOtherColor];
 }
 
 @end

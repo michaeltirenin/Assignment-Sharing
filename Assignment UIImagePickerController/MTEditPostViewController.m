@@ -21,15 +21,6 @@
 
 @implementation MTEditPostViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -39,27 +30,20 @@
     _editContentTextField.text = _post.content;
     _editPictureImageView.image = _post.picture;
     
+    _editUserNameTextField.delegate = self;
+    _editTitleTextField.delegate = self;
+    _editContentTextField.delegate = self;
+    
     _editPictureImageView.layer.cornerRadius = _editPictureImageView.frame.size.width / 2.0;
     [_editPictureImageView setClipsToBounds:YES];
-
     
 //    NSLog(@"%@", _postCell.contentView.backgroundColor);
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 // .delegate allows for keyboard resignation
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    _editUserNameTextField.delegate = self;
-    _editTitleTextField.delegate = self;
-    _editContentTextField.delegate = self;
 }
 
 /*
@@ -88,7 +72,7 @@
     _post.content = _editContentTextField.text;
     _post.picture = _editPictureImageView.image;
     
-    [self.editPostDelegate updateTable];
+//    [self.editPostDelegate updateTable];
     
     [self saveImageToLibrary:_post.picture];
     
@@ -108,8 +92,6 @@
     } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Photo Library"]) {
         _imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         [self presentViewController:_imagePicker animated:YES completion:nil];
-    } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Cancel"]) {
-        [actionSheet dismissWithClickedButtonIndex:0 animated:YES];
     } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Add B&W Photo Effect"]) {
         [self applyCIFilter:_editPictureImageView.image];
     } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Delete Photo"]) {
@@ -127,7 +109,7 @@
         if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
             UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Choose Photo Source"
                                                                      delegate:self
-                                                            cancelButtonTitle:@"Cancel" //cancel isn't working correclty?
+                                                            cancelButtonTitle:@"Cancel"
                                                        destructiveButtonTitle:nil
                                                             otherButtonTitles:@"Photo Library", @"Camera", nil];
             [actionSheet showFromBarButtonItem:sender animated:YES];
@@ -194,6 +176,9 @@
     CGImageRef cgImage = [context createCGImage:result fromRect:extent];   // 5
     
     UIImage *filteredImage = [UIImage imageWithCGImage:cgImage];
+    
+    CGImageRelease(cgImage); // added by Michael due to leak
+    
     _editPictureImageView.image = filteredImage;
 //    [self saveImageToLibrary:filteredImage];
 }

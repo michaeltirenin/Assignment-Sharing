@@ -8,6 +8,7 @@
 
 #import "MTPostTableViewCell.h"
 #import "MTPost.h"
+#import "UIColor+Manage.h"
 
 @implementation MTPostTableViewCell
 
@@ -23,6 +24,7 @@
 - (void)awakeFromNib
 {
     // Initialization code
+//    self.contentView.backgroundColor = [UIColor redColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -52,7 +54,7 @@
     
     [[self timeStampLabel] setFont:[UIFont fontWithName:@"TrebuchetMS-Italic" size:11]];
     [[self timeStampLabel] setTextAlignment:NSTextAlignmentLeft];
-    [[self timeStampLabel] setTextColor:[UIColor colorWithRed:200.0/255.0f green:200.0/255.0f blue:200.0/255.0f alpha:1.0f]];
+    [[self timeStampLabel] setTextColor:[UIColor colorWithRed:150.0/255.0f green:150.0/255.0f blue:150.0/255.0f alpha:1.0f]];
     
     [[self contentLabel] setFont:[UIFont fontWithName:@"TrebuchetMS" size:12.5]];
     [[self contentLabel] setTextAlignment:NSTextAlignmentLeft];
@@ -60,6 +62,9 @@
     _pictureImageView.layer.cornerRadius = _pictureImageView.frame.size.width / 2.0;
     [_pictureImageView setClipsToBounds:YES];
 //    [_pictureImageView.layer setMasksToBounds:YES];
+    
+    //set random color here
+    // self.contentView.backbroundColor = [UIColor randomColor];
 
 }
 
