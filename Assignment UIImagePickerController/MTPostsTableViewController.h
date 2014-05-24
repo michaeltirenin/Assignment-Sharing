@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-//@interface MTPostsTableViewController : UITableViewController
+@interface MTPostsTableViewController : UITableViewController
 
 // Michael mentioned this should be a UIViewController
-@interface MTPostsTableViewController : UIViewController
+//@interface MTPostsTableViewController : UIViewController
 
 @property (nonatomic, strong) NSMutableArray *posts;
 
