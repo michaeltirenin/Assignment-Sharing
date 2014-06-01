@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Assignment UIImagePickerController.xcodeproj">
+      location = "self:Assignment Sharing.xcodeproj">
    </FileRef>
 </Workspace>

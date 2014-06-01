@@ -47,7 +47,7 @@
 			containerPortal = F2F577CE1929908500FCBA28 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F2F577D51929908500FCBA28;
-			remoteInfo = "Assignment UIImagePickerController";
+			remoteInfo = "Assignment Sharing";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -70,21 +70,21 @@
 		F292DC3E1929BC85009322AB /* MTEditPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTEditPostViewController.m; sourceTree = "<group>"; };
 		F2DAF8FC1929DBD3005B2822 /* UIColor+Manage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Manage.h"; sourceTree = "<group>"; };
 		F2DAF8FD1929DBD3005B2822 /* UIColor+Manage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Manage.m"; sourceTree = "<group>"; };
-		F2F577D61929908500FCBA28 /* Assignment UIImagePickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment UIImagePickerController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F577D61929908500FCBA28 /* Assignment Sharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment Sharing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F577D91929908500FCBA28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F2F577DB1929908500FCBA28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F2F577DD1929908500FCBA28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F2F577E11929908500FCBA28 /* Assignment UIImagePickerController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment UIImagePickerController-Info.plist"; sourceTree = "<group>"; };
+		F2F577E11929908500FCBA28 /* Assignment Sharing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment Sharing-Info.plist"; sourceTree = "<group>"; };
 		F2F577E31929908500FCBA28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2F577E51929908500FCBA28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F2F577E71929908500FCBA28 /* Assignment UIImagePickerController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment UIImagePickerController-Prefix.pch"; sourceTree = "<group>"; };
+		F2F577E71929908500FCBA28 /* Assignment Sharing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment Sharing-Prefix.pch"; sourceTree = "<group>"; };
 		F2F577E81929908500FCBA28 /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
 		F2F577E91929908500FCBA28 /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
 		F2F577EC1929908500FCBA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2F577F11929908500FCBA28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F2F577F71929908500FCBA28 /* Assignment UIImagePickerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment UIImagePickerControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F577F71929908500FCBA28 /* Assignment SharingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment SharingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F577F81929908500FCBA28 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F2F578001929908500FCBA28 /* Assignment UIImagePickerControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment UIImagePickerControllerTests-Info.plist"; sourceTree = "<group>"; };
+		F2F578001929908500FCBA28 /* Assignment SharingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment SharingTests-Info.plist"; sourceTree = "<group>"; };
 		F2F578021929908500FCBA28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2F578041929908500FCBA28 /* Assignment_UIImagePickerControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment_UIImagePickerControllerTests.m; sourceTree = "<group>"; };
 		F2F5780E1929914600FCBA28 /* MTPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPost.h; sourceTree = "<group>"; };
@@ -144,8 +144,8 @@
 		F2F577CD1929908500FCBA28 = {
 			isa = PBXGroup;
 			children = (
-				F2F577DF1929908500FCBA28 /* Assignment UIImagePickerController */,
-				F2F577FE1929908500FCBA28 /* Assignment UIImagePickerControllerTests */,
+				F2F577DF1929908500FCBA28 /* Assignment Sharing */,
+				F2F577FE1929908500FCBA28 /* Assignment SharingTests */,
 				F2F577D81929908500FCBA28 /* Frameworks */,
 				F2F577D71929908500FCBA28 /* Products */,
 			);
@@ -154,8 +154,8 @@
 		F2F577D71929908500FCBA28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2F577D61929908500FCBA28 /* Assignment UIImagePickerController.app */,
-				F2F577F71929908500FCBA28 /* Assignment UIImagePickerControllerTests.xctest */,
+				F2F577D61929908500FCBA28 /* Assignment Sharing.app */,
+				F2F577F71929908500FCBA28 /* Assignment SharingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F2F577DF1929908500FCBA28 /* Assignment UIImagePickerController */ = {
+		F2F577DF1929908500FCBA28 /* Assignment Sharing */ = {
 			isa = PBXGroup;
 			children = (
 				F2F578111929915400FCBA28 /* Model */,
@@ -187,7 +187,7 @@
 				F2F577E01929908500FCBA28 /* Supporting Files */,
 				F24E47A8192AD38C005E663C /* Images */,
 			);
-			path = "Assignment UIImagePickerController";
+			path = "Assignment Sharing";
 			sourceTree = "<group>";
 		};
 		F2F577E01929908500FCBA28 /* Supporting Files */ = {
@@ -195,27 +195,27 @@
 			children = (
 				F2F577E81929908500FCBA28 /* MTAppDelegate.h */,
 				F2F577E91929908500FCBA28 /* MTAppDelegate.m */,
-				F2F577E11929908500FCBA28 /* Assignment UIImagePickerController-Info.plist */,
+				F2F577E11929908500FCBA28 /* Assignment Sharing-Info.plist */,
 				F2F577E21929908500FCBA28 /* InfoPlist.strings */,
 				F2F577E51929908500FCBA28 /* main.m */,
-				F2F577E71929908500FCBA28 /* Assignment UIImagePickerController-Prefix.pch */,
+				F2F577E71929908500FCBA28 /* Assignment Sharing-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F2F577FE1929908500FCBA28 /* Assignment UIImagePickerControllerTests */ = {
+		F2F577FE1929908500FCBA28 /* Assignment SharingTests */ = {
 			isa = PBXGroup;
 			children = (
 				F2F578041929908500FCBA28 /* Assignment_UIImagePickerControllerTests.m */,
 				F2F577FF1929908500FCBA28 /* Supporting Files */,
 			);
-			path = "Assignment UIImagePickerControllerTests";
+			path = "Assignment SharingTests";
 			sourceTree = "<group>";
 		};
 		F2F577FF1929908500FCBA28 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F2F578001929908500FCBA28 /* Assignment UIImagePickerControllerTests-Info.plist */,
+				F2F578001929908500FCBA28 /* Assignment SharingTests-Info.plist */,
 				F2F578011929908500FCBA28 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -256,9 +256,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F2F577D51929908500FCBA28 /* Assignment UIImagePickerController */ = {
+		F2F577D51929908500FCBA28 /* Assignment Sharing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2F578081929908500FCBA28 /* Build configuration list for PBXNativeTarget "Assignment UIImagePickerController" */;
+			buildConfigurationList = F2F578081929908500FCBA28 /* Build configuration list for PBXNativeTarget "Assignment Sharing" */;
 			buildPhases = (
 				F2F577D21929908500FCBA28 /* Sources */,
 				F2F577D31929908500FCBA28 /* Frameworks */,
@@ -268,14 +268,14 @@
 			);
 			dependencies = (
 			);
-			name = "Assignment UIImagePickerController";
-			productName = "Assignment UIImagePickerController";
-			productReference = F2F577D61929908500FCBA28 /* Assignment UIImagePickerController.app */;
+			name = "Assignment Sharing";
+			productName = "Assignment Sharing";
+			productReference = F2F577D61929908500FCBA28 /* Assignment Sharing.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F2F577F61929908500FCBA28 /* Assignment UIImagePickerControllerTests */ = {
+		F2F577F61929908500FCBA28 /* Assignment SharingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2F5780B1929908500FCBA28 /* Build configuration list for PBXNativeTarget "Assignment UIImagePickerControllerTests" */;
+			buildConfigurationList = F2F5780B1929908500FCBA28 /* Build configuration list for PBXNativeTarget "Assignment SharingTests" */;
 			buildPhases = (
 				F2F577F31929908500FCBA28 /* Sources */,
 				F2F577F41929908500FCBA28 /* Frameworks */,
@@ -286,9 +286,9 @@
 			dependencies = (
 				F2F577FD1929908500FCBA28 /* PBXTargetDependency */,
 			);
-			name = "Assignment UIImagePickerControllerTests";
-			productName = "Assignment UIImagePickerControllerTests";
-			productReference = F2F577F71929908500FCBA28 /* Assignment UIImagePickerControllerTests.xctest */;
+			name = "Assignment SharingTests";
+			productName = "Assignment SharingTests";
+			productReference = F2F577F71929908500FCBA28 /* Assignment SharingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -309,7 +309,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F2F577D11929908500FCBA28 /* Build configuration list for PBXProject "Assignment UIImagePickerController" */;
+			buildConfigurationList = F2F577D11929908500FCBA28 /* Build configuration list for PBXProject "Assignment Sharing" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -322,8 +322,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F2F577D51929908500FCBA28 /* Assignment UIImagePickerController */,
-				F2F577F61929908500FCBA28 /* Assignment UIImagePickerControllerTests */,
+				F2F577D51929908500FCBA28 /* Assignment Sharing */,
+				F2F577F61929908500FCBA28 /* Assignment SharingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -389,7 +389,7 @@
 /* Begin PBXTargetDependency section */
 		F2F577FD1929908500FCBA28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F2F577D51929908500FCBA28 /* Assignment UIImagePickerController */;
+			target = F2F577D51929908500FCBA28 /* Assignment Sharing */;
 			targetProxy = F2F577FC1929908500FCBA28 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -499,9 +499,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Assignment UIImagePickerController/Assignment UIImagePickerController-Prefix.pch";
-				INFOPLIST_FILE = "Assignment UIImagePickerController/Assignment UIImagePickerController-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Assignment Sharing/Assignment Sharing-Prefix.pch";
+				INFOPLIST_FILE = "Assignment Sharing/Assignment Sharing-Info.plist";
+				PRODUCT_NAME = "Assignment Sharing";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -513,9 +513,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Assignment UIImagePickerController/Assignment UIImagePickerController-Prefix.pch";
-				INFOPLIST_FILE = "Assignment UIImagePickerController/Assignment UIImagePickerController-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Assignment Sharing/Assignment Sharing-Prefix.pch";
+				INFOPLIST_FILE = "Assignment Sharing/Assignment Sharing-Info.plist";
+				PRODUCT_NAME = "Assignment Sharing";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -523,20 +523,20 @@
 		F2F5780C1929908500FCBA28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Assignment UIImagePickerController.app/Assignment UIImagePickerController";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Assignment Sharing.app/Assignment Sharing";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Assignment UIImagePickerController/Assignment UIImagePickerController-Prefix.pch";
+				GCC_PREFIX_HEADER = "Assignment Sharing/Assignment Sharing-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Assignment UIImagePickerControllerTests/Assignment UIImagePickerControllerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Assignment SharingTests/Assignment SharingTests-Info.plist";
+				PRODUCT_NAME = "Assignment SharingTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -545,16 +545,16 @@
 		F2F5780D1929908500FCBA28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Assignment UIImagePickerController.app/Assignment UIImagePickerController";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Assignment Shairng.app/Assignment Sharing";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Assignment UIImagePickerController/Assignment UIImagePickerController-Prefix.pch";
-				INFOPLIST_FILE = "Assignment UIImagePickerControllerTests/Assignment UIImagePickerControllerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Assignment Sharing/Assignment Sharing-Prefix.pch";
+				INFOPLIST_FILE = "Assignment SharingTests/Assignment SharingTests-Info.plist";
+				PRODUCT_NAME = "Assignment SharingTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -563,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F2F577D11929908500FCBA28 /* Build configuration list for PBXProject "Assignment UIImagePickerController" */ = {
+		F2F577D11929908500FCBA28 /* Build configuration list for PBXProject "Assignment Sharing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2F578061929908500FCBA28 /* Debug */,
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2F578081929908500FCBA28 /* Build configuration list for PBXNativeTarget "Assignment UIImagePickerController" */ = {
+		F2F578081929908500FCBA28 /* Build configuration list for PBXNativeTarget "Assignment Sharing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2F578091929908500FCBA28 /* Debug */,
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2F5780B1929908500FCBA28 /* Build configuration list for PBXNativeTarget "Assignment UIImagePickerControllerTests" */ = {
+		F2F5780B1929908500FCBA28 /* Build configuration list for PBXNativeTarget "Assignment SharingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2F5780C1929908500FCBA28 /* Debug */,
