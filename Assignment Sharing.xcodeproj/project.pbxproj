@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20B3C3B193B96510074A370 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B3C3A193B96510074A370 /* Social.framework */; };
 		F241E070192C3A380087823F /* dougherty1.png in Resources */ = {isa = PBXBuildFile; fileRef = F241E066192C3A380087823F /* dougherty1.png */; };
 		F241E071192C3A380087823F /* dougherty2.png in Resources */ = {isa = PBXBuildFile; fileRef = F241E067192C3A380087823F /* dougherty2.png */; };
 		F241E072192C3A380087823F /* dougherty3.png in Resources */ = {isa = PBXBuildFile; fileRef = F241E068192C3A380087823F /* dougherty3.png */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F20B3C37193ADC910074A370 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		F20B3C3A193B96510074A370 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F241E066192C3A380087823F /* dougherty1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dougherty1.png; sourceTree = "<group>"; };
 		F241E067192C3A380087823F /* dougherty2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dougherty2.png; sourceTree = "<group>"; };
 		F241E068192C3A380087823F /* dougherty3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dougherty3.png; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20B3C3B193B96510074A370 /* Social.framework in Frameworks */,
 				F24E47ED192B1753005E663C /* CoreImage.framework in Frameworks */,
 				F24E47EB192B11F4005E663C /* AssetsLibrary.framework in Frameworks */,
 				F2F577DC1929908500FCBA28 /* CoreGraphics.framework in Frameworks */,
@@ -163,6 +167,8 @@
 		F2F577D81929908500FCBA28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F20B3C3A193B96510074A370 /* Social.framework */,
+				F20B3C37193ADC910074A370 /* MessageUI.framework */,
 				F24E47EC192B1753005E663C /* CoreImage.framework */,
 				F24E47EA192B11F4005E663C /* AssetsLibrary.framework */,
 				F2F577D91929908500FCBA28 /* Foundation.framework */,
