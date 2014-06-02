@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F20B3C3B193B96510074A370 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B3C3A193B96510074A370 /* Social.framework */; };
 		F20B3C3D193BCCF50074A370 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B3C3C193BCCF50074A370 /* MobileCoreServices.framework */; };
+		F20B3C3E193C28BA0074A370 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B3C37193ADC910074A370 /* MessageUI.framework */; };
 		F241E070192C3A380087823F /* dougherty1.png in Resources */ = {isa = PBXBuildFile; fileRef = F241E066192C3A380087823F /* dougherty1.png */; };
 		F241E071192C3A380087823F /* dougherty2.png in Resources */ = {isa = PBXBuildFile; fileRef = F241E067192C3A380087823F /* dougherty2.png */; };
 		F241E072192C3A380087823F /* dougherty3.png in Resources */ = {isa = PBXBuildFile; fileRef = F241E068192C3A380087823F /* dougherty3.png */; };
@@ -107,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20B3C3E193C28BA0074A370 /* MessageUI.framework in Frameworks */,
 				F20B3C3D193BCCF50074A370 /* MobileCoreServices.framework in Frameworks */,
 				F20B3C3B193B96510074A370 /* Social.framework in Frameworks */,
 				F24E47ED192B1753005E663C /* CoreImage.framework in Frameworks */,
