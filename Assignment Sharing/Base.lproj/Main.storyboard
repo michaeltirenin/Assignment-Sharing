@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4LY-aG-ktL">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <scenes>
+        <!--Blog-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MTPostsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="119" sectionHeaderHeight="22" sectionFooterHeight="22" id="obR-OR-Wij">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="0.0" reuseIdentifier="PostCell" rowHeight="119" id="zQu-aI-efg" customClass="MTPostTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zQu-aI-efg" id="7EU-x7-XgX">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="118"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uqt-Y3-XFQ">
+                                            <rect key="frame" x="10" y="10" width="96" height="96"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOw-gM-74n">
+                                            <rect key="frame" x="119" y="28" width="69" height="17"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="11"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVv-af-UOM">
+                                            <rect key="frame" x="119" y="10" width="172" height="17"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="content content content content content content content content content content content content" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="172" translatesAutoresizingMaskIntoConstraints="NO" id="XuP-PM-984">
+                                            <rect key="frame" x="119" y="44" width="172" height="68"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12.5"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="timeStamp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhD-Pf-lt4">
+                                            <rect key="frame" x="191" y="28" width="100" height="17"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="11"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="contentLabel" destination="XuP-PM-984" id="0ci-uc-sQc"/>
+                                    <outlet property="pictureImageView" destination="uqt-Y3-XFQ" id="3wa-5d-CtC"/>
+                                    <outlet property="timeStampLabel" destination="BhD-Pf-lt4" id="G4s-Oh-THU"/>
+                                    <outlet property="titleLabel" destination="QVv-af-UOM" id="fI4-aY-sfl"/>
+                                    <outlet property="userNameLabel" destination="vOw-gM-74n" id="aNp-pb-9ew"/>
+                                    <segue destination="FhF-nY-Gar" kind="push" identifier="EditSegue" id="5mX-d6-uOH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vXZ-lx-hvc" id="6Cs-0s-mX8"/>
+                            <outlet property="delegate" destination="vXZ-lx-hvc" id="gF2-j5-Xwu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Blog" id="7wx-AM-ojc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6zU-nN-xIz">
+                            <connections>
+                                <segue destination="Zt6-JN-cxn" kind="modal" identifier="PublishSegue" id="5sF-p6-UG1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="-82"/>
+        </scene>
+        <!--Create New Post-->
+        <scene sceneID="f9b-W3-q6N">
+            <objects>
+                <viewController id="Zt6-JN-cxn" customClass="MTCreatePostViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RTa-EV-MxE"/>
+                        <viewControllerLayoutGuide type="bottom" id="bQl-R8-Xb3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k6N-7W-wDJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSl-gp-Vrj">
+                                <rect key="frame" x="20" y="100" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FGd-jp-9Y8">
+                                <rect key="frame" x="20" y="145" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Content" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="piS-Q2-vFD">
+                                <rect key="frame" x="20" y="190" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SY5-PZ-gC9">
+                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Create New Post" id="mcS-ub-kkz">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="H7q-5q-qDz">
+                                            <connections>
+                                                <action selector="cancelNewPost:" destination="Zt6-JN-cxn" id="Ng1-6H-d5P"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oiS-pX-YTn">
+                                            <connections>
+                                                <action selector="publishNewPost:" destination="Zt6-JN-cxn" id="gn5-WO-zmp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAc-pH-QzO">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Photo Options" id="Rmn-Ff-dpc">
+                                        <connections>
+                                            <action selector="showImagePicker:" destination="Zt6-JN-cxn" id="Yaw-gx-Txi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="XjI-7w-XsH"/>
+                                    <barButtonItem image="twitter" id="wbt-5K-Li9">
+                                        <connections>
+                                            <action selector="postToTwitter:" destination="Zt6-JN-cxn" id="jLC-1S-Ui5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aaS-P4-cy9"/>
+                                    <barButtonItem image="facebook" id="s4G-w8-GkB">
+                                        <connections>
+                                            <action selector="postToFacebook:" destination="Zt6-JN-cxn" id="ZS1-r7-7h6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Grz-oH-2IL"/>
+                                    <barButtonItem image="message" id="mkN-Hf-AN9">
+                                        <connections>
+                                            <action selector="postToIMessage:" destination="Zt6-JN-cxn" id="Aor-RR-EeP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fAB-7H-ob5"/>
+                                    <barButtonItem image="email" id="dPl-cW-Mp1">
+                                        <connections>
+                                            <action selector="postToEmail:" destination="Zt6-JN-cxn" id="j7e-Tn-Zbx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8g9-vt-uld">
+                                <rect key="frame" x="68" y="237" width="184" height="184"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create New Post" id="HDf-uT-Vqu">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="5cf-kq-vS7"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="IlB-6C-rJZ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="createContentTextField" destination="piS-Q2-vFD" id="d1E-Ui-bOa"/>
+                        <outlet property="createPictureImageView" destination="8g9-vt-uld" id="OlW-EL-bvb"/>
+                        <outlet property="createTitleTextField" destination="FGd-jp-9Y8" id="m2i-la-81i"/>
+                        <outlet property="createUserNameTextField" destination="DSl-gp-Vrj" id="XOE-V5-Kvw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dgo-UA-ZX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1138" y="144"/>
+        </scene>
+        <!--Edit & Share Post-->
+        <scene sceneID="1dp-3I-8sc">
+            <objects>
+                <viewController id="FhF-nY-Gar" customClass="MTEditPostViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IJx-ZF-1dQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="g10-PT-xhP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EG9-ep-t3T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bgo-0L-3rU">
+                                <rect key="frame" x="20" y="100" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CsP-E2-Uz6">
+                                <rect key="frame" x="20" y="145" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Content" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IMQ-4N-Kik">
+                                <rect key="frame" x="20" y="190" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dS4-vQ-2U6">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Photo Options" id="47i-T5-Okb">
+                                        <connections>
+                                            <action selector="showEditImagePicker:" destination="FhF-nY-Gar" id="Mum-aw-Qc2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="s7t-7N-KZT"/>
+                                    <barButtonItem systemItem="action" id="n1z-w6-7ed">
+                                        <connections>
+                                            <action selector="showShareSheet:" destination="FhF-nY-Gar" id="bH7-25-Qmx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPB-lK-m9B">
+                                <rect key="frame" x="68" y="237" width="184" height="184"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit &amp; Share Post" id="RPK-6G-UOo">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wCp-jn-qNF">
+                            <connections>
+                                <action selector="cancelEditPost:" destination="FhF-nY-Gar" id="Y4p-9s-liF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="PFP-aS-JkU">
+                            <connections>
+                                <action selector="saveEditPost:" destination="FhF-nY-Gar" id="95e-e5-qX2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="editContentTextField" destination="IMQ-4N-Kik" id="1uA-Vu-X21"/>
+                        <outlet property="editPictureImageView" destination="cPB-lK-m9B" id="iou-bO-3nO"/>
+                        <outlet property="editTitleTextField" destination="CsP-E2-Uz6" id="doM-nI-XbG"/>
+                        <outlet property="editUserNameTextField" destination="Bgo-0L-3rU" id="keb-an-nm2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mge-di-bLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1138" y="-439"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4s9-ez-x9N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4LY-aG-ktL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jzo-CO-LNn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="t8X-IL-WuF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s11-nA-nWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="email" width="22" height="22"/>
+        <image name="facebook" width="22" height="22"/>
+        <image name="message" width="22" height="22"/>
+        <image name="twitter" width="22" height="22"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination">
+            <size key="portraitSize" width="320" height="480"/>
+            <size key="landscapeSize" width="480" height="320"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
+</document>
